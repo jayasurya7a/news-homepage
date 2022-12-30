@@ -78,6 +78,10 @@ body {
     cursor: pointer;
 }
 
+.header nav ul li:hover{
+    color: hsl(5, 85%, 63%);
+}
+
 .header .menu-button button{
     background: transparent;
     outline: none;
@@ -129,7 +133,7 @@ body {
 
 .main > div:last-child h2 {
     color: hsl(35, 77%, 62%);
-    margin-bottom: 1rem;
+  
 }
 
 .main > div:last-child article {
@@ -196,10 +200,12 @@ body {
     .header nav {
         opacity: 1;
         z-index: auto;
+        width: 100%;
     }
 
     .header nav.open {
         position: relative;
+        top: 0;
         left: 0;
         width: auto;
         background-color: transparent;
@@ -208,12 +214,16 @@ body {
     }
 
     .header nav #menu-close {
-        display: none;;
+        display: none;
     }
 
     .header nav ul {
         position: relative;
         top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
         transform: translateY(0%);
     }
 
@@ -221,7 +231,7 @@ body {
         margin: 0;
     }
 
-    .header .menu-button button{
+    .header .menu-button button {
         display: none;
     }
     
